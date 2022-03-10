@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="InetBankingV1">
+<suite name="UKTalentHubJava">
 
 	<listeners>
-		<listener class-name="com.inetbanking.utilities.Reporting" />
+		<listener class-name="com.UKTalentHubJava.utilities.Reporting" />
 	</listeners>
 
-
-	<test name="BankingApp Test">
+	<test name="UKTalentHubJava Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.inetbanking.testCases.TC_LoginTest_001" />
-			<!--  <class name="com.inetbanking.testCases.TC_LoginDDT_002" />-->
-			<!--<class name="com.inetbanking.testCases.TC_AddCustomerTest_003" />-->
+			<class name="com.UKTalentHubJava.testCases.TC_LoginTest_001" />
+<!--			<class name="com.UKTalentHubJava.testCases.TC_LoginDDT_002" />-->
+<!--			<class name="com.UKTalentHubJava.testCases.TC_AddCustomerTest_003" />-->
 
 		</classes>
 

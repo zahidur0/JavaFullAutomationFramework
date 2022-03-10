@@ -6,8 +6,8 @@
     <groups>
     </groups>
     <test started-at="2018-11-24T02:30:32Z" name="BankingApp Test(failed)" finished-at="2018-11-24T02:31:09Z" duration-ms="36559">
-      <class name="com.inetbanking.testCases.TC_LoginDDT_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:33Z" name="setup" finished-at="2018-11-24T02:30:40Z" duration-ms="7593" status="PASS">
+      <class name="com.UKTalentHubJava.testCases.TC_LoginDDT_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:33Z" name="setup" finished-at="2018-11-24T02:30:40Z" duration-ms="7593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:42Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:48Z" duration-ms="6104" status="FAIL">
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:42Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:48Z" duration-ms="6104" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -36,12 +36,12 @@
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.inetbanking.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+at com.UKTalentHubJava.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:48Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:54Z" duration-ms="6213" status="FAIL">
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:48Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:54Z" duration-ms="6213" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -91,12 +91,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.inetbanking.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+at com.UKTalentHubJava.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,7 +128,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:54Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:59Z" duration-ms="5348" status="FAIL">
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:54Z" name="loginDDT" data-provider="LoginData" finished-at="2018-11-24T02:30:59Z" duration-ms="5348" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -146,12 +146,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.inetbanking.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+at com.UKTalentHubJava.testCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,13 +183,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:59Z" name="tearDown" finished-at="2018-11-24T02:31:00Z" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginDDT_002@dd0c991]" started-at="2018-11-24T02:30:59Z" name="tearDown" finished-at="2018-11-24T02:31:00Z" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetbanking.testCases.TC_LoginDDT_002 -->
-      <class name="com.inetbanking.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:00Z" name="setup" finished-at="2018-11-24T02:31:06Z" duration-ms="5812" status="PASS">
+      </class> <!-- com.UKTalentHubJava.testCases.TC_LoginDDT_002 -->
+      <class name="com.UKTalentHubJava.testCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:00Z" name="setup" finished-at="2018-11-24T02:31:06Z" duration-ms="5812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,15 +200,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:06Z" name="loginTest" finished-at="2018-11-24T02:31:08Z" duration-ms="1857" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:06Z" name="loginTest" finished-at="2018-11-24T02:31:08Z" duration-ms="1857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:08Z" name="tearDown" finished-at="2018-11-24T02:31:09Z" duration-ms="847" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.UKTalentHubJava.testCases.TC_LoginTest_001@5f16132a]" started-at="2018-11-24T02:31:08Z" name="tearDown" finished-at="2018-11-24T02:31:09Z" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetbanking.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.UKTalentHubJava.testCases.TC_LoginTest_001 -->
     </test> <!-- BankingApp Test(failed) -->
   </suite> <!-- Failed suite [InetBankingV1] -->
 </testng-results>
