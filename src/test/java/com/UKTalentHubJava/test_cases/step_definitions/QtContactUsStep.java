@@ -86,17 +86,20 @@ public class QtContactUsStep {
     }
 
     @When("the user enters first name")
-    public void theUserEntersFirstName() {
+    public void theUserEntersFirstName() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.id(firstNameId)).sendKeys("Mike");
     }
 
     @And("the user enters last name")
-    public void theUserEntersLastName() {
+    public void theUserEntersLastName() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.id(lastNameId)).sendKeys("Rowland");
     }
 
     @And("the user enters company name")
-    public void theUserEntersCompanyName() {
+    public void theUserEntersCompanyName() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.id(companyNameId)).sendKeys("Definitely A Real Company");
     }
 
@@ -109,12 +112,14 @@ public class QtContactUsStep {
     }
 
     @And("the user enters email")
-    public void theUserEntersEmail() {
+    public void theUserEntersEmail() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.id(emailId)).sendKeys("mikerowland@email.com");
     }
 
     @And("the user enters phone number")
-    public void theUserEntersPhoneNumber() {
+    public void theUserEntersPhoneNumber() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(By.id(phoneId)).sendKeys("12345678901");
     }
 
@@ -127,6 +132,7 @@ public class QtContactUsStep {
 
     @And("the user fills how can we help section")
     public void theUserFillsHowCanWeHelpSection() {
+
         driver.findElement(By.id(helpTextboxId)).sendKeys("help");
     }
 
@@ -136,6 +142,7 @@ public class QtContactUsStep {
 
     @Then("the user receives a thank you message")
     public void theUserReceivesAThankYouMessage() {
+
     }
 
     @After

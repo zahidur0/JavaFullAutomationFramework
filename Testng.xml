@@ -10,7 +10,8 @@
 	<test name="UKTalentHubJava Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.UKTalentHubJava.testCases.TC_LoginTest_001" />
+			<class name="com.UKTalentHubJava.test_cases.TrelloLoginStep" />
+<!--			<class name="com.UKTalentHubJava.testCases.TC_LoginTest_001" />-->
 <!--			<class name="com.UKTalentHubJava.testCases.TC_LoginDDT_002" />-->
 <!--			<class name="com.UKTalentHubJava.testCases.TC_AddCustomerTest_003" />-->
 
