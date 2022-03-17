@@ -1,4 +1,4 @@
-package com.UKTalentHubJava.test_cases.step_definitions;
+package com.UKTalentHubJava.test_cases.selenium.step_definitions;
 
 
 import io.cucumber.java.After;
@@ -28,14 +28,13 @@ public class TrelloLoginStep {
     String loginErrorMessageXPath = configReader.getLoginErrorMessageXPath();
 
     WebDriver driver;
-    @Before
+    @Before("@trello-login")
     public void iInitialiseTheChromeBrowser() {
-        // initialise the driver
         //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Ulisses.Dasilva\\UKTalentHubJava\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                System.getProperty("user.dir") + "\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
         //WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
     }
 
     @Given("the user is on the trello login page")
@@ -64,7 +63,7 @@ public class TrelloLoginStep {
 
     }
 
-    @After
+    @After("@trello-login")
     public void driverQuit() {
         driver.quit();
     }

@@ -5,11 +5,26 @@ import io.restassured.RestAssured;
 import io.restassured.authentication.AuthenticationScheme;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 import static io.restassured.RestAssured.oauth2;
 
 public class GoRestUserConfig {
-    public static String token = "b1e92e56efbf49ff974ef0b51f4ca1b104361754a95c48dee13951b7f8b3517d";
-    public static String existentId = "19388";
+    public static String token;
+
+    static {
+        try {
+            token = ReadToken();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String existentId = "17426";
     public static RequestSpecification goRestRequestSpec;
 
     @Before
@@ -23,5 +38,16 @@ public class GoRestUserConfig {
                 .build();
 
         RestAssured.requestSpecification = goRestRequestSpec;
+    }
+
+    private static String ReadToken() throws IOException {
+        String propertyFilePath = "C:\\Users\\Mohammed.Rahman\\Documents\\Authentication Key for Go REST.txt";
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(propertyFilePath));
+            return reader.readLine();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Token file not found at " + propertyFilePath);
+        }
     }
 }

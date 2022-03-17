@@ -35,7 +35,7 @@ public class TCR10_ValidateAgainstJsonSchemaStep {
     @And("I have a JSON schema")
     public void iHaveAJSONSchema() {
         // here we check if the JSON schema exists
-        Assert.assertTrue(new File("src/test/java/com/UKTalentHubJava/test_cases/restassured/schemmas/GoRestJsonSchema.json").isFile());
+        Assert.assertTrue(new File("src/test/resources/GoRestJsonSchema.json").isFile());
         System.out.println("Schema exists");
         LineDrawer.HorizontalLineDrawer();
     }

@@ -1,3 +1,4 @@
+@trello-login
 Feature: The user would like to login into the application
 
   Scenario Outline: The user cannot login with invalid credentials

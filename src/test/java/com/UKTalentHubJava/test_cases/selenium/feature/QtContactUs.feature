@@ -1,3 +1,4 @@
+@qt-contact-us
 Feature: User launches Qualitest site and explores
 
   Scenario: The user launches Qualitest site

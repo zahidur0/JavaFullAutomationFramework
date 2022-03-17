@@ -1,7 +1,9 @@
-package com.UKTalentHubJava.test_cases.step_definitions;
+package com.UKTalentHubJava.test_cases.selenium.step_definitions;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -31,12 +33,13 @@ public class QtContactUsStep {
     String helpTextboxId = configReader.getHelpTextboxId();
     String locationId = configReader.getLocationId();
 
-    @Before
+    @Before("@qt-contact-us")
     public void iInitialiseTheChromeBrowser() {
         //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Ulisses.Dasilva\\UKTalentHubJava\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                System.getProperty("user.dir") + "\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
         //WebDriverManager.chromedriver().setup();
-        driver = (ChromeDriver) new ChromeDriver();
+        driver = new ChromeDriver();
     }
 
     @Given("the user loads Qualitest official site")
@@ -145,7 +148,7 @@ public class QtContactUsStep {
 
     }
 
-    @After
+    @After("@qt-contact-us")
     public void driverQuit() {
         driver.quit();
     }

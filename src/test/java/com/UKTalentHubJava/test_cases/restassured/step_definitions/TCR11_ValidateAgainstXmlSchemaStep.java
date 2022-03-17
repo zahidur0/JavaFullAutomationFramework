@@ -35,7 +35,7 @@ public class TCR11_ValidateAgainstXmlSchemaStep {
     @And("I have a XML schema")
     public void iHaveAXMLSchema() {
         // here we check if the JSON schema exists
-        Assert.assertTrue(new File("src/test/java/com/UKTalentHubJava/test_cases/restassured/schemmas/GoRestXmlSchema.xsd").isFile());
+        Assert.assertTrue(new File("src/test/resources/GoRestXmlSchema.xsd").isFile());
         System.out.println("Schema exists");
         LineDrawer.HorizontalLineDrawer();
     }
