@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import org.junit.Assert;
+
 import java.io.File;
 
 import static io.restassured.RestAssured.given;
@@ -21,13 +22,13 @@ public class TCR11_ValidateAgainstXmlSchemaStep {
         LineDrawer.HorizontalLineDrawer();
         String id = GoRestUserConfig.existentId;
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token)
-                        .header("Content-Type", "application/xml")
-                        .header("Accept", "application/xml")
+                .auth().oauth2(GoRestUserConfig.token)
+                .header("Content-Type", "application/xml")
+                .header("Accept", "application/xml")
                 .when()
-                        .get("https://gorest.co.in/public/v2/users/"+ id + ".xml")
+                .get("https://gorest.co.in/public/v2/users/" + id + ".xml")
                 .then()
-                        .extract().response();
+                .extract().response();
         System.out.println(response.asString());
         LineDrawer.HorizontalLineDrawer();
     }

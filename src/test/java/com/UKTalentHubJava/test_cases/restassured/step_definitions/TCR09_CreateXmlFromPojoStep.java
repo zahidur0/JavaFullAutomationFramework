@@ -17,6 +17,7 @@ public class TCR09_CreateXmlFromPojoStep {
     ObjectMapper xmlMapper = new XmlMapper().enable(SerializationFeature.INDENT_OUTPUT);
     String xml;
     GoRest goRest;
+
     @Given("I create a pojo")
     public void iCreateAPojo() {
         LineDrawer.HorizontalLineDrawer();

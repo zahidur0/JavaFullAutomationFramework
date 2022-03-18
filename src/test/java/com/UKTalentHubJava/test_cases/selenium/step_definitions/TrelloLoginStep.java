@@ -28,6 +28,7 @@ public class TrelloLoginStep {
     String loginErrorMessageXPath = configReader.getLoginErrorMessageXPath();
 
     WebDriver driver;
+
     @Before("@trello-login")
     public void iInitialiseTheChromeBrowser() {
         //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
@@ -58,7 +59,7 @@ public class TrelloLoginStep {
     public void theUserDoNotSuccessfullyLoginIntoTheApplicationHomepage() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions
-                        .visibilityOfElementLocated(By.xpath(loginErrorMessageXPath)));
+                .visibilityOfElementLocated(By.xpath(loginErrorMessageXPath)));
         System.out.println("test");
 
     }

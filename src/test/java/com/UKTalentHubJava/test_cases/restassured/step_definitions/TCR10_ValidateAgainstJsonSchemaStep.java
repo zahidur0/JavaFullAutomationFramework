@@ -25,9 +25,9 @@ public class TCR10_ValidateAgainstJsonSchemaStep {
         String id = GoRestUserConfig.existentId;
         System.out.println(id);
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token)
+                .auth().oauth2(GoRestUserConfig.token)
                 .when()
-                        .get("https://gorest.co.in/public/v2/users/" + id + ".json");
+                .get("https://gorest.co.in/public/v2/users/" + id + ".json");
         System.out.println(response.asString());
         LineDrawer.HorizontalLineDrawer();
     }

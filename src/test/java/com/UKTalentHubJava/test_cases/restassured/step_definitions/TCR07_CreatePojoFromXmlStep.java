@@ -15,16 +15,17 @@ public class TCR07_CreatePojoFromXmlStep {
 
     Response response;
     GoRest goRestObject;
+
     @Given("I receive a XML response")
     public void iReceiveAXMLResponse() {
         LineDrawer.HorizontalLineDrawer();
         String id = GoRestUserConfig.existentId;
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token)
+                .auth().oauth2(GoRestUserConfig.token)
                 .when()
-                        .get("https://gorest.co.in/public/v2/users/" + id + ".xml")
+                .get("https://gorest.co.in/public/v2/users/" + id + ".xml")
                 .then()
-                        .extract().response();
+                .extract().response();
         System.out.println(response.asString());
         LineDrawer.HorizontalLineDrawer();
     }

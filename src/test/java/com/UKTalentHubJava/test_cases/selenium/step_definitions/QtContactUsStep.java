@@ -1,9 +1,9 @@
 package com.UKTalentHubJava.test_cases.selenium.step_definitions;
 
+import com.UKTalentHubJava.screenshot_taker.ScreenshotTaker;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.UKTalentHubJava.utilities.ReadConfig;
 import org.openqa.selenium.support.ui.Select;
 
+import java.io.IOException;
 import java.util.List;
 
 public class QtContactUsStep {
@@ -32,6 +33,7 @@ public class QtContactUsStep {
     String radioButtonsId = configReader.getRadioButtonsId();
     String helpTextboxId = configReader.getHelpTextboxId();
     String locationId = configReader.getLocationId();
+
 
     @Before("@qt-contact-us")
     public void iInitialiseTheChromeBrowser() {
@@ -57,7 +59,6 @@ public class QtContactUsStep {
     @Then("the page states {string}")
     public void thePageStatesTheWorldSLeadingAILedQualityEngineeringCompanyQualitest(String mainPageTitle) {
         // check if the tab title matches the expected tab title
-        //mainPageTitle = "The World’s Leading AI-Led Quality Engineering Company | Qualitest";
         System.out.println("==================================================================");
         System.out.println(driver.getTitle());
         System.out.println(mainPageTitle);
@@ -90,19 +91,16 @@ public class QtContactUsStep {
 
     @When("the user enters first name")
     public void theUserEntersFirstName() throws InterruptedException {
-        Thread.sleep(3000);
         driver.findElement(By.id(firstNameId)).sendKeys("Mike");
     }
 
     @And("the user enters last name")
     public void theUserEntersLastName() throws InterruptedException {
-        Thread.sleep(3000);
         driver.findElement(By.id(lastNameId)).sendKeys("Rowland");
     }
 
     @And("the user enters company name")
     public void theUserEntersCompanyName() throws InterruptedException {
-        Thread.sleep(3000);
         driver.findElement(By.id(companyNameId)).sendKeys("Definitely A Real Company");
     }
 
@@ -116,13 +114,11 @@ public class QtContactUsStep {
 
     @And("the user enters email")
     public void theUserEntersEmail() throws InterruptedException {
-        Thread.sleep(3000);
         driver.findElement(By.id(emailId)).sendKeys("mikerowland@email.com");
     }
 
     @And("the user enters phone number")
     public void theUserEntersPhoneNumber() throws InterruptedException {
-        Thread.sleep(3000);
         driver.findElement(By.id(phoneId)).sendKeys("12345678901");
     }
 
@@ -146,6 +142,11 @@ public class QtContactUsStep {
     @Then("the user receives a thank you message")
     public void theUserReceivesAThankYouMessage() {
 
+    }
+
+    @AfterStep("@qt-contact-us")
+    public void screenShot() throws IOException {
+        new ScreenshotTaker(driver);
     }
 
     @After("@qt-contact-us")

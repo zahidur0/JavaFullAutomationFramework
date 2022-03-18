@@ -33,9 +33,9 @@ public class TCR05_MeasuringAPIResponseTimeStep {
         // to post in a JSON format. During the 'when' section we are adding a header and specifying that the content
         // we will be supply is in a JSON format. We then supply the post url. Finally, we extract the response.
         postResponse = given()
-                        .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
+                .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
                 .when()
-                        .header("Content-Type", "application/json").post("https://gorest.co.in/public/v2/users");
+                .header("Content-Type", "application/json").post("https://gorest.co.in/public/v2/users");
         postResponse.then().assertThat().statusCode(201);
         // we can return the response as a string
         String jsonResponse = postResponse.asString();
@@ -47,9 +47,9 @@ public class TCR05_MeasuringAPIResponseTimeStep {
     public void iSubmitAGetRequest() {
         // pull in data using a GET request
         getResponse = given()
-                        .auth().oauth2(GoRestUserConfig.token)
+                .auth().oauth2(GoRestUserConfig.token)
                 .when()
-                        .get("https://gorest.co.in/public/v2/users");
+                .get("https://gorest.co.in/public/v2/users");
         getResponse.then().assertThat().statusCode(200);
         System.out.println("Request successful (status code " + getResponse.getStatusCode() + ")");
         LineDrawer.HorizontalLineDrawer();
@@ -68,8 +68,7 @@ public class TCR05_MeasuringAPIResponseTimeStep {
     public void iCompareTheGetApiResponseTimeToThePostApiResponseTime() {
         if (getResponseTime < postResponseTime) {
             System.out.println("The POST request response took longer than the GET request response.");
-        }
-        else {
+        } else {
             System.out.println("The GET request response took longer than the POST request response.");
         }
         LineDrawer.HorizontalLineDrawer();

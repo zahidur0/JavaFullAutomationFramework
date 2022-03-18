@@ -13,7 +13,7 @@ import org.junit.Assert;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsString;
 
-public class TCR02_SendingAndValidatingPOSTRequestsStep{
+public class TCR02_SendingAndValidatingPOSTRequestsStep {
 
     String email;
     Response response;
@@ -33,10 +33,10 @@ public class TCR02_SendingAndValidatingPOSTRequestsStep{
         // we will be supply is in a JSON format. We then supply the post url. Finally, we extract the response.
         LineDrawer.HorizontalLineDrawer();
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
+                .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
                 .when()
-                        .header("Content-Type", "application/json")
-                        .post("https://gorest.co.in/public/v2/users");
+                .header("Content-Type", "application/json")
+                .post("https://gorest.co.in/public/v2/users");
         // we can return the response as a string
         String jsonResponse = response.asString();
         System.out.println(jsonResponse);

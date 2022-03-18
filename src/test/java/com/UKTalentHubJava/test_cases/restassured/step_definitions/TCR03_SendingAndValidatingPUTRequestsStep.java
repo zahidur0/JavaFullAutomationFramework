@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 
 import org.junit.Assert;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsString;
 
@@ -18,6 +19,7 @@ public class TCR03_SendingAndValidatingPUTRequestsStep {
     String updatedEmail;
     String updatedStatus;
     String id;
+
     @Given("I submit a put request")
     public void iSubmitAPutRequest() {
         LineDrawer.HorizontalLineDrawer();
@@ -34,10 +36,10 @@ public class TCR03_SendingAndValidatingPUTRequestsStep {
                 "}";
         // submit PUT request
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
+                .auth().oauth2(GoRestUserConfig.token).body(userExampleJson)
                 .when()
-                        .header("Content-Type", "application/json")
-                        .put("https://gorest.co.in/public/v2/users/" + id);
+                .header("Content-Type", "application/json")
+                .put("https://gorest.co.in/public/v2/users/" + id);
         response.prettyPrint();
         LineDrawer.HorizontalLineDrawer();
     }

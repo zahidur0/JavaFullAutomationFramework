@@ -25,9 +25,9 @@ public class TCR04_SendingAndValidatingDELETERequestsStep {
         // submit a DELETE request
         id = GoRestUserConfig.existentId;
         response = given()
-                        .auth().oauth2(GoRestUserConfig.token)
+                .auth().oauth2(GoRestUserConfig.token)
                 .when()
-                        .delete("https://gorest.co.in/public/v2/users/" + id);
+                .delete("https://gorest.co.in/public/v2/users/" + id);
         System.out.println("Delete request sent");
         LineDrawer.HorizontalLineDrawer();
     }

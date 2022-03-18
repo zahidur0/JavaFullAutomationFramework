@@ -39,7 +39,7 @@ public class TCR12_GettingHeadersStep {
     public void iCanExtractAllHeaders() {
         // get all the headers from the response and print them
         Headers headers = response.getHeaders();
-        for (Header header: headers) {
+        for (Header header : headers) {
             System.out.println(header);
         }
         LineDrawer.HorizontalLineDrawer();
