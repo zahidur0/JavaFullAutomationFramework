@@ -18,7 +18,7 @@ public class ScreenshotTaker {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
         String filePath = System.getProperty("user.dir") + "\\screenshots"
-                        + "\\" + timeStamp + counter + ".png";
+                + "\\" + timeStamp + counter + ".png";
         checkFileString(screenshot, filePath);
     }
 

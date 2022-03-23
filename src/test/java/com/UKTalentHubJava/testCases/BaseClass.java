@@ -1,60 +1,76 @@
 package com.UKTalentHubJava.testCases;
 
 import com.UKTalentHubJava.utilities.ReadConfig;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
     ReadConfig readconfig = new ReadConfig();
     public String baseURL = readconfig.getApplicationURL();
+
     public String username = readconfig.getUsername();
     public String password = readconfig.getPassword();
+
 
     public WebDriver driver;
     public static Logger logger;
 
     @Parameters("browser")
-    @BeforeClass
+    @BeforeMethod
     public void setup(String br) {
 
-        logger = Logger.getLogger("ebanking");
+        logger = Logger.getLogger("UkTalentHub");
         PropertyConfigurator.configure("Log4j.properties");
 
+        DesiredCapabilities dc = new DesiredCapabilities();
+        dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+
         if (br.equals("chrome")) {
+            ChromeOptions ops = new ChromeOptions();
+            ops.addArguments("--disable-notifications");
+
             //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ulisses.Dasilva\\UKTalentHubJava\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mohammed.Rahman\\Documents\\UKTalentHub-JavaProjectV1\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
             //WebDriverManager.chromedriver().setup();
-            driver = (ChromeDriver) new ChromeDriver();
+
+            driver = (ChromeDriver) new ChromeDriver(ops);
+            driver.manage().window().maximize();
+
         } else if (br.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", readconfig.getFirefoxPath());
             driver = new FirefoxDriver();
+            driver.manage().window().maximize();
         } else if (br.equals("ie")) {
             System.setProperty("webdriver.ie.driver", readconfig.getIEPath());
             driver = new InternetExplorerDriver();
+            driver.manage().window().maximize();
         }
 
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(baseURL);
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
@@ -62,7 +78,7 @@ public class BaseClass {
     public void captureScreen(WebDriver driver, String tname) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
+        File target = new File(System.getProperty("user.dir") + "/screenshots/" + tname + ".png");
         FileUtils.copyFile(source, target);
         System.out.println("Screenshot taken");
     }
@@ -77,5 +93,14 @@ public class BaseClass {
         return (generatedString2);
     }
 
-
+    public boolean isAlertPresent() { // user defined method created to check alert is present or not
+            try {
+                new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.alertIsPresent());
+//            driver.switchTo().alert();
+                return true;
+            } catch (TimeoutException e) {
+                System.out.println("Alert not present");
+                return false;
+            }
+        }
 }

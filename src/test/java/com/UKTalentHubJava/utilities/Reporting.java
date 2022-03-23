@@ -1,6 +1,6 @@
 package com.UKTalentHubJava.utilities;
 
-//Listener class used to generate Extent reports
+// Listener class used to generate Extent reports
 
 import java.io.File;
 import java.io.IOException;
