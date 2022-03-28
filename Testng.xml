@@ -13,7 +13,8 @@
 <!--			<class name="com.UKTalentHubJava.test_cases.TrelloLoginStep" />-->
 <!--			<class name="com.UKTalentHubJava.testCases.TCT01_LoginTest" />-->
 <!--			<class name="com.UKTalentHubJava.testCases.TCT02_LoginDataDrivenTest" />-->
-			<class name="com.UKTalentHubJava.testCases.TCT03_LoginDataDrivenTest"/>
+<!--			<class name="com.UKTalentHubJava.testCases.TCT03_LoginDataDrivenTest"/>-->
+			<class name="com.UKTalentHubJava.testCases.TCT04_SqlLoginTest"/>
 		</classes>
 
 	</test>

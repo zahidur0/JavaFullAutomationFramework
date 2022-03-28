@@ -30,7 +30,6 @@ public class BaseClassAutomationPractice {
     public String username = "123123@email.com";
     public String password = "123123";
 
-
     public WebDriver driver;
     public static Logger logger;
 
