@@ -1,6 +1,7 @@
 package com.UKTalentHubJava.testCases;
 
 import com.UKTalentHubJava.pageObjects.AutomationPractice;
+import com.UKTalentHubJava.screenshot_taker.ScreenshotTaker;
 import com.UKTalentHubJava.utilities.XLUtils;
 import org.junit.Assert;
 import org.testng.annotations.DataProvider;
@@ -22,9 +23,14 @@ public class TCT03_LoginDataDrivenTest extends BaseClassAutomationPractice {
 
         if (ap.incorrectPasswordMessageExists()) {
             logger.info("Login failed");
+            new ScreenshotTaker(driver);
             Assert.fail("Login failed");
         } else {
-            logger.info("Login successful");
+            if (driver.getTitle().equals("My account - My Store")) {
+                logger.info("Login successful");
+            } else {
+                Assert.fail("Account page not reached");
+            }
         }
     }
 

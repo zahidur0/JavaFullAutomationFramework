@@ -1,3 +1,4 @@
+@req-spec
 Feature: Use a RequestSpecification to pass authorisation check
 
   Scenario: Successfully use a RequestSpecification object to pass authorisation check

@@ -20,7 +20,7 @@ public class TCR02_SendingAndValidatingPOSTRequestsStep {
 
     @Given("I submit a post request")
     public void iSubmitAPostRequest() {
-        email = "test1@email.com";
+        email = "test14@email.com";
         // JSON that will be posted (correctly formatted)
         String userExampleJson = "{\n" +
                 "    \"name\": \"test\",\n" +

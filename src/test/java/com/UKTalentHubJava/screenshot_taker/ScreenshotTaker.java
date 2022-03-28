@@ -16,16 +16,15 @@ public class ScreenshotTaker {
 
     public ScreenshotTaker(WebDriver driver) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-        String filePath = System.getProperty("user.dir") + "\\screenshots"
-                + "\\" + timeStamp + counter + ".png";
+        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(Calendar.getInstance().getTime());
+        String filePath = System.getProperty("user.dir") + "\\screenshots\\"
+                + timeStamp + "-" + counter + ".png";
         checkFileString(screenshot, filePath);
     }
 
     public ScreenshotTaker(WebDriver driver, String screenshotDestination) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         checkFileString(screenshot, screenshotDestination);
-        FileUtils.copyFile(screenshot, new File(screenshotDestination));
         System.out.println("Screenshot has been taken.");
         System.out.println("Screenshot stored in " + screenshotDestination);
     }

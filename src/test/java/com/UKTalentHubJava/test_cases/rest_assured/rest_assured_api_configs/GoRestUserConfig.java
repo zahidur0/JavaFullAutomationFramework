@@ -24,10 +24,10 @@ public class GoRestUserConfig {
         }
     }
 
-    public static String existentId = "5239";
+    public static String existentId = "3625";
     public static RequestSpecification goRestRequestSpec;
 
-    @Before
+    @Before("@req-spec")
     public static void setup() {
         AuthenticationScheme auth2 = oauth2(token);
         goRestRequestSpec = new RequestSpecBuilder()

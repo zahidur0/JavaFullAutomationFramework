@@ -75,32 +75,4 @@ public class BaseClassAutomationPractice {
         driver.quit();
     }
 
-    public void captureScreen(WebDriver driver, String tname) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        File target = new File(System.getProperty("user.dir") + "/screenshots/" + tname + ".png");
-        FileUtils.copyFile(source, target);
-        System.out.println("Screenshot taken");
-    }
-
-    public String randomestring() {
-        String generatedstring = RandomStringUtils.randomAlphabetic(8);
-        return (generatedstring);
-    }
-
-    public static String randomeNum() {
-        String generatedString2 = RandomStringUtils.randomNumeric(4);
-        return (generatedString2);
-    }
-
-    public boolean isAlertPresent() { // user defined method created to check alert is present or not
-            try {
-                new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.alertIsPresent());
-//            driver.switchTo().alert();
-                return true;
-            } catch (TimeoutException e) {
-                System.out.println("Alert not present");
-                return false;
-            }
-        }
 }
