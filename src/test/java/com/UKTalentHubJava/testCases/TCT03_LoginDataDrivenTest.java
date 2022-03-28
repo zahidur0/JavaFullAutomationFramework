@@ -49,6 +49,5 @@ public class TCT03_LoginDataDrivenTest extends BaseClassAutomationPractice {
         }
         System.out.println(Arrays.deepToString(loginData));
         return loginData;
-
     }
 }

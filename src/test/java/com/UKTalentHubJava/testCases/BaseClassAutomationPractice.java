@@ -52,7 +52,7 @@ public class BaseClassAutomationPractice {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mohammed.Rahman\\Documents\\UKTalentHub-JavaProjectV1\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
             //WebDriverManager.chromedriver().setup();
 
-            driver = (ChromeDriver) new ChromeDriver(ops);
+            driver = new ChromeDriver(ops);
             driver.manage().window().maximize();
 
         } else if (br.equals("firefox")) {

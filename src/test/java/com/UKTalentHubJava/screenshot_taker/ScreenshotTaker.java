@@ -13,12 +13,21 @@ import java.util.Calendar;
 public class ScreenshotTaker {
 
     private int counter = 0;
+    String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(Calendar.getInstance().getTime());
 
     public ScreenshotTaker(WebDriver driver) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(Calendar.getInstance().getTime());
         String filePath = System.getProperty("user.dir") + "\\screenshots\\"
                 + timeStamp + "-" + counter + ".png";
+        checkFileString(screenshot, filePath);
+    }
+
+    public ScreenshotTaker(WebDriver driver, String path, String currentStepName) throws IOException {
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String updatedCurrentStepName = currentStepName.replaceAll("[^a-zA-Z0-9\\-]", "_");
+        System.out.println(updatedCurrentStepName);
+        String fileName = updatedCurrentStepName + " - " + timeStamp + "-" + counter + ".png";
+        String filePath = path + fileName;
         checkFileString(screenshot, filePath);
     }
 
