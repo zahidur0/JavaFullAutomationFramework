@@ -44,7 +44,16 @@
     <!-- Dependencies required for Project -->
 
     <dependencies>
+        <!-- used to connect to sqlite database-->
+        <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.36.0.3</version>
+        </dependency>
 
+
+        <!-- used to pass the base class information to the cucumber hooks class-->
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
         <dependency>
             <groupId>io.cucumber</groupId>
