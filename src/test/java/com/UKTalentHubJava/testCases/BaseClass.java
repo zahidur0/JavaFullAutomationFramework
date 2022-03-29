@@ -48,7 +48,7 @@ public class BaseClass {
             ops.addArguments("--disable-notifications");
 
             //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mohammed.Rahman\\Documents\\UKTalentHub-JavaProjectV1\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\indic\\Desktop\\Work\\Qualitest\\JavaCoP\\framework\\new\\JavaFullAutomationFramework\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
             //WebDriverManager.chromedriver().setup();
 
             driver = (ChromeDriver) new ChromeDriver(ops);
