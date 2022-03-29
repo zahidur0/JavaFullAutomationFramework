@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Arrays;
 
-public class TCT04_SqlLoginTest extends BaseClassAutomationPractice{
+public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
 
     @Test(dataProvider = "SqlLoginData")
     public void LoginDDT(String uname, String pwd) throws IOException {
@@ -35,7 +35,6 @@ public class TCT04_SqlLoginTest extends BaseClassAutomationPractice{
     }
 
     private Connection connect() {
-
         String url = "jdbc:sqlite:" +
                 System.getProperty("user.dir") +
                 "/src/test/java/com/UKTalentHubJava/testData/LoginDetails.db";
@@ -58,7 +57,6 @@ public class TCT04_SqlLoginTest extends BaseClassAutomationPractice{
 
     @DataProvider(name = "SqlLoginData")
     public Object[][] selectAll() throws SQLException {
-
         String sql = "SELECT username, password FROM correct_login_details";
         Connection conn = this.connect();
         Statement stmt = conn.createStatement();
@@ -77,15 +75,8 @@ public class TCT04_SqlLoginTest extends BaseClassAutomationPractice{
                 loginDetails[i][j] = rs.getString(j + 1);
             }
         }
-
         conn.close();
         System.out.println(Arrays.deepToString(loginDetails));
         return loginDetails;
     }
-
-    public static void main(String[] args) throws SQLException {
-        TCT04_SqlLoginTest sqliteData = new TCT04_SqlLoginTest();
-        sqliteData.selectAll();
-    }
-
 }

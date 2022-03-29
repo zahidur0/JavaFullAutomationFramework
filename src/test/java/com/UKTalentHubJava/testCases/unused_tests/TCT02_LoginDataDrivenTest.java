@@ -1,10 +1,11 @@
-package com.UKTalentHubJava.testCases;
+package com.UKTalentHubJava.testCases.unused_tests;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 
+import com.UKTalentHubJava.testCases.BaseClass;
 import com.UKTalentHubJava.utilities.XLUtils;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.support.ui.ExpectedConditions;

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class TCT03_LoginDataDrivenTest extends BaseClassAutomationPractice {
+public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
 
     @Test(dataProvider = "LoginData")
     public void LoginDDT(String uname, String pwd) throws IOException {

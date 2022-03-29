@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Create JSON from a POJO
 
   Scenario: Successfully create JSON from a POJO

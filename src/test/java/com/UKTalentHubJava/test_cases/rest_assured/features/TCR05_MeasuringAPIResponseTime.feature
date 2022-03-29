@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Measure the response time of API requests
 
   Scenario: I compare the time taken for a GET and POST request response

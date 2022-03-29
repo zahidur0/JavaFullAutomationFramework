@@ -1,3 +1,4 @@
+@rest-assured
 @req-spec
 Feature: Use a RequestSpecification to pass authorisation check
 

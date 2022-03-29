@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Check response against XML schema
 
   Scenario: Successfully verify response against XML schema

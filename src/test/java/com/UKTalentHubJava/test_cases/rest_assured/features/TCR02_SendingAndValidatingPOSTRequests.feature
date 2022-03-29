@@ -1,3 +1,4 @@
+@rest-assured
 Feature: A user is able to send a post request and validate the response
 
   Scenario: A user successfully posts an entry

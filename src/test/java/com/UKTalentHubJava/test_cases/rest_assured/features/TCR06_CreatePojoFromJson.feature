@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Serialise JSON as a POJO
 
   Scenario: Successfully serialise JSON as a POJO

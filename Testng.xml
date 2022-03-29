@@ -11,10 +11,10 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 <!--			<class name="com.UKTalentHubJava.test_cases.TrelloLoginStep" />-->
-<!--			<class name="com.UKTalentHubJava.testCases.TCT01_LoginTest" />-->
-<!--			<class name="com.UKTalentHubJava.testCases.TCT02_LoginDataDrivenTest" />-->
-<!--			<class name="com.UKTalentHubJava.testCases.TCT03_LoginDataDrivenTest"/>-->
-			<class name="com.UKTalentHubJava.testCases.TCT04_SqlLoginTest"/>
+<!--			<class name="com.UKTalentHubJava.testCases.unused_tests.TCT01_LoginTest" />-->
+<!--			<class name="com.UKTalentHubJava.testCases.unused_tests.TCT02_LoginDataDrivenTest" />-->
+<!--			<class name="com.UKTalentHubJava.testCases.TCT01_LoginDataDrivenTest"/>-->
+			<class name="com.UKTalentHubJava.testCases.TCT02_SqlLoginTest"/>
 		</classes>
 
 	</test>

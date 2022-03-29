@@ -1,3 +1,4 @@
+@rest-assured
 Feature: A user is able to send a delete request and validate the response
 
   Scenario: A user successfully deletes an entry

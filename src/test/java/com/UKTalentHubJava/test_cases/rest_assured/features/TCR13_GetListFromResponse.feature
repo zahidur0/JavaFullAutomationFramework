@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Return a List from a GET response
 
   Scenario: Successfully return a List from a GET response

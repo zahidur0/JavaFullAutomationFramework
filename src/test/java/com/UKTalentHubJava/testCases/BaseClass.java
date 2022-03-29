@@ -1,7 +1,6 @@
 package com.UKTalentHubJava.testCases;
 
 import com.UKTalentHubJava.utilities.ReadConfig;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;

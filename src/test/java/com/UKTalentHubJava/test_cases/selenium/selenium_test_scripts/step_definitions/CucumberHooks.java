@@ -1,15 +1,10 @@
 package com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions;
 
 import com.UKTalentHubJava.screenshot_taker.ScreenshotTaker;
-import io.cucumber.core.backend.TestCaseState;
+import com.UKTalentHubJava.utilities.Cucumber;
 import io.cucumber.java.*;
-import io.cucumber.plugin.event.PickleStepTestStep;
-import io.cucumber.plugin.event.TestCase;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class CucumberHooks extends BaseClass {
     private int currentStepDefIndex = 0;
@@ -34,30 +29,7 @@ public class CucumberHooks extends BaseClass {
 
     @BeforeStep("@selenium")
     public void beforeTest(Scenario scenario) throws NoSuchFieldException, IllegalAccessException {
-
-        // We can get the class field "delegate" from the Scenario class
-        // and make it accessible. We then cast this field variable
-        // to being a TestCaseState object and then get the field variable
-        // testCase of type class TestCase. We set the accessible of the testCase
-        // field to true. Then we get the TestCaseState object in TestCase class
-        Field f = scenario.getClass().getDeclaredField("delegate");
-        f.setAccessible(true);
-        TestCaseState tcs = (TestCaseState) f.get(scenario);
-
-        Field f2 = tcs.getClass().getDeclaredField("testCase");
-        f2.setAccessible(true);
-        TestCase r = (TestCase) f2.get(tcs);
-
-        List<PickleStepTestStep> stepDefs = r.getTestSteps()
-                .stream()
-                .filter(x -> x instanceof PickleStepTestStep)
-                .map(x -> (PickleStepTestStep) x)
-                .collect(Collectors.toList());
-
-        PickleStepTestStep currentStepDef = stepDefs
-                .get(currentStepDefIndex);
-        currentStepDescr = currentStepDef.getStep().getText();
-        System.out.println(currentStepDescr);
+        currentStepDescr = Cucumber.getStepName(scenario, currentStepDefIndex);
     }
 
     @AfterStep("@selenium")

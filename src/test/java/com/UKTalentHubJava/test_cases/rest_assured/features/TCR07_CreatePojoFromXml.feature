@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Serialise XML as a POJO
 
   Scenario: Successfully serialise XML as a POJO

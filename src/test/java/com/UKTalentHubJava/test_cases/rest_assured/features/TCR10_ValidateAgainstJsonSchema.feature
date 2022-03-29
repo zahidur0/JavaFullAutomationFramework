@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Check response against JSON schema
 
   Scenario: Successfully verify response against JSON schema

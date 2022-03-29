@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Create XML from a POJO
 
   Scenario: Successfully create XML from a POJO

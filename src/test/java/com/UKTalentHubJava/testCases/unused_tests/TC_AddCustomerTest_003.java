@@ -1,7 +1,8 @@
-package com.UKTalentHubJava.testCases;
+package com.UKTalentHubJava.testCases.unused_tests;
 
 import java.io.IOException;
 
+import com.UKTalentHubJava.testCases.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

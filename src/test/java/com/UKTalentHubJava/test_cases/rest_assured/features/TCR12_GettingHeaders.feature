@@ -1,3 +1,4 @@
+@rest-assured
 Feature: Getting headers from a response
 
   Scenario: Successfully get all headers from a response
