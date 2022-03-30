@@ -1884,3 +1884,20 @@
 2022-03-30 14:05:01,825 [main] INFO UkTalentHub - Entered username
 2022-03-30 14:05:01,896 [main] INFO UkTalentHub - Entered password
 2022-03-30 14:05:04,000 [main] INFO UkTalentHub - Login failed
+2022-03-30 16:09:52,686 [main] INFO UkTalentHub - Login successful
+2022-03-30 16:09:57,843 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:13:43,861 [main] INFO UkTalentHub - Login successful
+2022-03-30 16:13:50,102 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:16:56,736 [main] INFO UkTalentHub - Login successful
+2022-03-30 16:17:16,127 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:17:38,548 [main] INFO UkTalentHub - Login successful
+2022-03-30 16:17:48,830 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:18:57,489 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:21:23,481 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:21:30,219 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:22:05,923 [main] INFO UkTalentHub - Login successful
+2022-03-30 16:22:11,847 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:22:18,497 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:22:24,373 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:22:33,585 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-30 16:22:42,621 [main] INFO UkTalentHub - Incorrect login test successful
