@@ -55,13 +55,14 @@ public class Reporting extends TestListenerAdapter {
         logger = extent.createTest(tr.getName()); // create new entry in th report
         logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
 
-        String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + tr.getName() + ".png";
-
+        String screenshotPath = System.getProperty("user.dir") + "\\screenshots\\"  + tr.getName() + ".png";
+        System.out.println(screenshotPath);
         File f = new File(screenshotPath);
 
         if (f.exists()) {
             try {
-                logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+                logger.fail("Screenshot is path:" + screenshotPath);
+                logger.addScreenCaptureFromPath(screenshotPath);
             } catch (IOException e) {
                 e.printStackTrace();
             }

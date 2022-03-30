@@ -33,7 +33,10 @@ public class ScreenshotTaker {
 
     public ScreenshotTaker(WebDriver driver, String screenshotDestination) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        checkFileString(screenshot, screenshotDestination);
+//        checkFileString(screenshot, screenshotDestination);
+        FileUtils.copyFile(screenshot, new File(screenshotDestination));
+        System.out.println("Screenshot has been taken.");
+        System.out.println("Screenshot stored in " + screenshotDestination);
         System.out.println("Screenshot has been taken.");
         System.out.println("Screenshot stored in " + screenshotDestination);
     }

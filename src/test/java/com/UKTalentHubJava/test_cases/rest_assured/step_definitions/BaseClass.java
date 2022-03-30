@@ -7,7 +7,7 @@ public class BaseClass {
 
     public Logger logger;
 //    Uncomment if you want to explicitly set the path of log4j file
-//    String log4JFilePath = System.getProperty("user.dir") + "/src/test/resources/log4j2.xml";
+//    String log4JFilePath = System.getProperty("user.dir") + "/src/test/resources/log4j2-cucumber.xml";
 
     public void loggerSetup() {
 //        Uncomment if you want to explicitly set the path of log4j file

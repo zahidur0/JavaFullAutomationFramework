@@ -32,7 +32,6 @@
         <Logger name="com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions"
                 level="debug">
             <AppenderRef ref="cucumber_selenium"/>
-            <AppenderRef ref="cucumber_selenium_html"/>
         </Logger>
 
         <Logger name="com.UKTalentHubJava.test_cases.rest_assured.step_definitions"
