@@ -21,7 +21,7 @@ public class BaseClass {
         ReadConfig readConfig = new ReadConfig();
         switch (br) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
                 return new ChromeDriver();
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", readConfig.getFirefoxPath());
@@ -31,7 +31,7 @@ public class BaseClass {
                 return new InternetExplorerDriver();
         }
         System.out.println("Defaulting to Chrome due to no browser specified.");
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriverV99.4.0\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         return new ChromeDriver();
     }
 }

@@ -26,5 +26,4 @@ INSERT INTO correct_login_details (username, password) VALUES
 SELECT COUNT(*) FROM correct_login_details;
 SELECT COUNT(*) FROM incorrect_login_details;
 SELECT id, username, password FROM correct_login_details;
-
 SELECT id, username, password FROM incorrect_login_details;

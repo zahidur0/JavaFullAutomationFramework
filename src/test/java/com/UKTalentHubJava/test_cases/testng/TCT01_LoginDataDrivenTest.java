@@ -33,6 +33,7 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
             }
         }
     }
+
     @Test(dataProvider = "InvalidData")
     public void LoginFailDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
@@ -55,7 +56,6 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
         }
     }
 
-
     @DataProvider(name = "ValidData")
     public Object[][] getValidData() throws IOException {
         String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\ValidLoginDetails.xlsx";
@@ -72,6 +72,7 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
         System.out.println(Arrays.deepToString(loginData));
         return loginData;
     }
+
     @DataProvider(name = "InvalidData")
     public Object[][] getInvalidData() throws IOException {
         String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\InvalidLoginDetails.xlsx";
