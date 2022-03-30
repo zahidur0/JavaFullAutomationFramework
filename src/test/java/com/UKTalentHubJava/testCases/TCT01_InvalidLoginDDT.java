@@ -10,8 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
-
+public class TCT01_InvalidLoginDDT extends BaseClassAutomationPractice{
     @Test(dataProvider = "LoginData")
     public void LoginDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
@@ -23,11 +22,12 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
 
         if (ap.incorrectPasswordMessageExists()) {
             logger.info("Login failed");
-            new ScreenshotTaker(driver);
-            Assert.fail("Login failed");
+            //new ScreenshotTaker(driver);
+            //Assert.fail("Login failed");
         } else {
             if (driver.getTitle().equals("My account - My Store")) {
                 logger.info("Login successful");
+                Assert.fail("Login successful");
             } else {
                 Assert.fail("Account page not reached");
             }
@@ -36,7 +36,7 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
 
     @DataProvider(name = "LoginData")
     public Object[][] getData() throws IOException {
-        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\testData\\ValidLoginDetails.xlsx";
+        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\testData\\InvalidLoginDetails.xlsx";
         int rowNum = XLUtils.getRowCount(path, "Account Details");
         int colCount = XLUtils.getCellCount(path, "Account Details", 1);
 
