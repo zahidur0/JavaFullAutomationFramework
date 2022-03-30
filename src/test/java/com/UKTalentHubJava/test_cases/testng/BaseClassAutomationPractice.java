@@ -43,7 +43,7 @@ public class BaseClassAutomationPractice {
             ops.addArguments("--disable-notifications");
 
             //System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriverV99.4.0/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
             //WebDriverManager.chromedriver().setup();
 
             driver = new ChromeDriver(ops);

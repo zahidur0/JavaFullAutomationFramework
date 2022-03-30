@@ -9,7 +9,7 @@ public class ReadConfig {
     Properties pro;
 
     public ReadConfig() {
-        File src = new File("./Configuration/config.properties");
+        File src = new File("./configuration/config.properties");
 
         try {
             FileInputStream fis = new FileInputStream(src);
@@ -54,97 +54,97 @@ public class ReadConfig {
     public String getDriverPath() {
         String driverPath = pro.getProperty("driverPath");
         if (driverPath != null) return driverPath;
-        else throw new RuntimeException("driverPath not specified in the Configuration.properties file.");
+        else throw new RuntimeException("driverPath not specified in the config.properties file.");
     }
 
     public String getQualitestMainUrl() {
         String url = pro.getProperty("qualitestMainUrl");
         if (url != null) return url;
-        else throw new RuntimeException("qualitestMainUrl not specified in the Configuration.properties file.");
+        else throw new RuntimeException("qualitestMainUrl not specified in the config.properties file.");
     }
 
     public String getContactUsButtonPath() {
         String contactUsButtonPath = pro.getProperty("contactUsButtonPath");
         if (contactUsButtonPath != null) return contactUsButtonPath;
-        else throw new RuntimeException("contactUsButtonPath not specified in the Configuration.properties file.");
+        else throw new RuntimeException("contactUsButtonPath not specified in the config.properties file.");
     }
 
     public String getFirstNameId() {
         String firstNameId = pro.getProperty("firstNameId");
         if (firstNameId != null) return firstNameId;
-        else throw new RuntimeException("firstNameId not specified in the configuration.properties file.");
+        else throw new RuntimeException("firstNameId not specified in the config.properties file.");
     }
 
     public String getLastNameId() {
         String lastNameId = pro.getProperty("lastNameId");
         if (lastNameId != null) return lastNameId;
-        else throw new RuntimeException("lastNameId not specified in the configuration.properties file.");
+        else throw new RuntimeException("lastNameId not specified in the config.properties file.");
     }
 
     public String getCompanyNameId() {
         String companyNameId = pro.getProperty("companyNameId");
         if (companyNameId != null) return companyNameId;
-        else throw new RuntimeException("companyNameId not specified in the configuration.properties file.");
+        else throw new RuntimeException("companyNameId not specified in the config.properties file.");
     }
 
     public String phoneId() {
         String phoneId = pro.getProperty("phoneId");
         if (phoneId != null) return phoneId;
-        else throw new RuntimeException("phoneId not specified in the configuration.properties file.");
+        else throw new RuntimeException("phoneId not specified in the config.properties file.");
     }
 
     public String getHelpTextboxId() {
         String helpTextboxId = pro.getProperty("helpTextboxId");
         if (helpTextboxId != null) return helpTextboxId;
-        else throw new RuntimeException("helpTextboxId not specified in the configuration.properties file.");
+        else throw new RuntimeException("helpTextboxId not specified in the config.properties file.");
     }
 
     public String getEmailId() {
         String emailId = pro.getProperty("emailId");
         if (emailId != null) return emailId;
-        else throw new RuntimeException("emailId not specified in the configuration.properties file.");
+        else throw new RuntimeException("emailId not specified in the config.properties file.");
     }
 
     public String getRadioButtonsId() {
         String radioButtonsId = pro.getProperty("radioButtonsId");
         if (radioButtonsId != null) return radioButtonsId;
-        else throw new RuntimeException("radioButtonsId not specified in the configuration.properties file.");
+        else throw new RuntimeException("radioButtonsId not specified in the config.properties file.");
     }
 
     public String getLocationId() {
         String locationId = pro.getProperty("locationId");
         if (locationId != null) return locationId;
-        else throw new RuntimeException("locationId not specified in the configuration.properties file.");
+        else throw new RuntimeException("locationId not specified in the config.properties file.");
     }
 
     public String getTrelloLoginPageUrl() {
         String trelloLoginPageUrl = pro.getProperty("trelloLoginPageUrl");
         if (trelloLoginPageUrl != null) return trelloLoginPageUrl;
-        else throw new RuntimeException("trelloLoginPageUrl not specified in the configuration.properties file.");
+        else throw new RuntimeException("trelloLoginPageUrl not specified in the config.properties file.");
     }
 
     public String getLoginId() {
         String loginId = pro.getProperty("loginId");
         if (loginId != null) return loginId;
-        else throw new RuntimeException("loginId not specified in the configuration.properties file.");
+        else throw new RuntimeException("loginId not specified in the config.properties file.");
     }
 
     public String getPasswordId() {
         String passwordId = pro.getProperty("passwordId");
         if (passwordId != null) return passwordId;
-        else throw new RuntimeException("passwordId not specified in the configuration.properties file.");
+        else throw new RuntimeException("passwordId not specified in the config.properties file.");
     }
 
     public String getLoginButtonId() {
         String loginButtonId = pro.getProperty("loginButtonId");
         if (loginButtonId != null) return loginButtonId;
-        else throw new RuntimeException("loginButtonId not specified in the configuration.properties file.");
+        else throw new RuntimeException("loginButtonId not specified in the config.properties file.");
     }
 
     public String getLoginErrorMessageXPath() {
         String loginErrorMessageXPath = pro.getProperty("loginErrorMessageXPath");
         if (loginErrorMessageXPath != null) return loginErrorMessageXPath;
-        else throw new RuntimeException("loginErrorMessageXPath not specified in the configuration.properties file.");
+        else throw new RuntimeException("loginErrorMessageXPath not specified in the config.properties file.");
     }
 }
 

@@ -200,3 +200,24 @@
 10:58:56.443 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
 10:58:57.506 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
 10:58:57.506 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage
+13:23:19.945 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+13:23:19.949 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:23:19.949 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+13:23:20.017 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:23:20.017 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+13:23:20.029 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:23:20.029 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+13:24:26.366 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+13:24:26.370 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:24:26.370 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+13:24:26.416 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:24:26.416 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+13:24:26.422 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:24:26.423 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+13:29:03.329 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+13:29:03.332 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:29:03.333 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+13:29:03.379 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:29:03.379 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+13:29:03.387 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+13:29:03.388 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
