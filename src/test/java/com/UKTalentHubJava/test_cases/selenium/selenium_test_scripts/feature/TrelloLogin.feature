@@ -1,3 +1,4 @@
+@selenium
 @trello-login
 Feature: The user would like to login into the application
 

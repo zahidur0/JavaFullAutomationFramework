@@ -3,11 +3,21 @@ package com.UKTalentHubJava.test_cases.rest_assured.step_definitions;
 import com.UKTalentHubJava.utilities.Cucumber;
 import io.cucumber.java.*;
 
-import java.io.IOException;
-
 public class CucumberHooks {
     private int currentStepDefIndex = 0;
+    private BaseClass base;
     String currentStepDescr;
+
+    // constructor for picocontainer
+    public CucumberHooks(BaseClass base) {
+        this.base = base;
+    }
+
+    @Before("@rest-assured")
+    public void setup(Scenario scenario) {
+        base.loggerSetup();
+        base.logger.info("STARTED -- " + scenario.getName());
+    }
 
     @BeforeStep("@rest-assured")
     public void beforeTest(Scenario scenario) throws NoSuchFieldException, IllegalAccessException {
@@ -15,11 +25,11 @@ public class CucumberHooks {
     }
 
     @AfterStep("@rest-assured")
-    public void screenShot(Scenario scenario) throws IOException {
-        if (!scenario.isFailed()) {
-            System.out.println(currentStepDescr);
-            System.out.println("Test passed");
+    public void afterStepCheck(Scenario scenario) {
+        if (scenario.isFailed()) {
+            base.logger.error("FAILED -- " + currentStepDescr);
         }
+        base.logger.info("PASSED -- " + currentStepDescr);
         currentStepDefIndex += 1;
     }
 }

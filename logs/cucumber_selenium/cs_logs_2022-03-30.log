@@ -1,0 +1,202 @@
+09:44:36.124 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:44:36.486 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:44:36.816 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:44:37.103 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:54:49.795 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:54:50.204 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:54:50.467 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:54:50.743 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:56:04.554 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:56:04.957 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:56:05.224 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:56:05.542 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:57:25.733 [main] INFO  - hello
+09:57:26.138 [main] INFO  - PASSED -- the user loads Qualitest official site
+09:57:26.400 [main] INFO  - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:57:26.680 [main] INFO  - PASSED -- the page url is "https://qualitestgroup.com/"
+09:57:58.216 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:57:58.546 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:57:58.862 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:57:59.139 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:58:41.661 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:58:41.986 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:58:42.368 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:58:42.671 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:59:07.742 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:59:08.033 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:59:08.453 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:59:08.753 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+09:59:41.392 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+09:59:41.736 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+09:59:42.042 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+09:59:42.327 [main] INFO  com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:00:16.332 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - hello
+10:00:16.651 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:00:16.983 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:00:17.256 [main] INFO  test_cases.selenium.selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:00:47.880 [main] INFO  step_definitions.BaseClass - hello
+10:00:48.193 [main] INFO  step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:00:48.503 [main] INFO  step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:00:48.787 [main] INFO  step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:01:26.845 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:01:27.182 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:01:27.510 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:01:27.781 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:31:56.611 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:31:56.914 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:31:57.233 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:31:57.506 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:34:32.476 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:34:32.803 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:34:33.159 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:34:33.464 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:35:32.282 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:35:32.680 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:35:32.965 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:35:33.277 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:38:47.393 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:38:47.744 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:38:48.079 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:38:48.436 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:39:20.467 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:39:20.811 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:39:21.181 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:39:21.497 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:40:56.880 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:40:57.200 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:40:57.534 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:40:57.857 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:41:19.438 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:41:19.794 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:41:20.172 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:41:20.469 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:42:12.199 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:42:12.541 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:42:12.863 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:42:13.123 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:42:31.254 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:42:31.597 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:42:31.945 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:42:32.263 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:43:18.705 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:43:19.104 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:43:19.379 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:43:19.656 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:56:13.853 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:56:13.861 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:56:13.863 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:56:13.892 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:56:13.892 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:56:13.897 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:56:13.898 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:56:18.078 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:56:18.078 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on Qualitest site
+10:56:20.047 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:56:20.048 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Contact us button
+10:56:20.094 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:56:20.094 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is able to access the Qualitest contact us page
+10:56:20.119 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:56:20.119 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page contains a form for the user
+10:56:24.542 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:24.542 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on Qualitest site
+10:56:26.551 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:26.551 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Contact us button
+10:56:26.743 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:26.744 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters first name
+10:56:26.836 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:26.836 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters last name
+10:56:26.939 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:26.940 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters company name
+10:56:27.021 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.021 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user selects what they want to talk about
+10:56:27.111 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.112 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters email
+10:56:27.207 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.209 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters phone number
+10:56:27.299 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.299 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters location
+10:56:27.366 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.366 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user fills how can we help section
+10:56:27.367 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.367 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Submit button
+10:56:27.368 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:56:27.368 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user receives a thank you message
+10:58:23.630 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - hello
+10:58:23.637 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:58:23.637 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+10:58:23.664 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:58:23.664 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+10:58:23.672 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+10:58:23.672 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+10:58:28.221 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:58:28.222 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on Qualitest site
+10:58:30.253 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:58:30.254 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Contact us button
+10:58:30.277 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:58:30.278 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is able to access the Qualitest contact us page
+10:58:30.306 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user opens contact us page
+10:58:30.311 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page contains a form for the user
+10:58:34.625 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:34.625 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on Qualitest site
+10:58:36.479 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:36.480 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Contact us button
+10:58:36.647 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:36.647 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters first name
+10:58:36.743 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:36.744 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters last name
+10:58:36.844 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:36.845 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters company name
+10:58:36.926 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:36.927 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user selects what they want to talk about
+10:58:37.027 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.027 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters email
+10:58:37.117 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.118 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters phone number
+10:58:37.211 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.211 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters location
+10:58:37.279 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.279 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user fills how can we help section
+10:58:37.279 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.280 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user clicks on Submit button
+10:58:37.280 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user fills out Qualitest contact us form
+10:58:37.280 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user receives a thank you message
+10:58:40.508 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:40.509 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on the trello login page
+10:58:40.618 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:40.619 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters username "admin@gmail.com" and password "admin123!"
+10:58:40.673 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:40.673 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
+10:58:42.260 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:42.260 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage
+10:58:44.882 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:44.883 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on the trello login page
+10:58:44.993 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:44.993 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters username "admin34@yahoo.com" and password "admin1965@"
+10:58:45.045 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:45.045 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
+10:58:46.108 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:46.109 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage
+10:58:48.573 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:48.573 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on the trello login page
+10:58:48.685 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:48.685 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters username "userXZY@gmailcom" and password "userXZY76&"
+10:58:48.734 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:48.734 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
+10:58:49.799 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:49.799 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage
+10:58:52.412 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:52.413 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on the trello login page
+10:58:52.522 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:52.522 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters username "novauser@gmail.com" and password "nova@123$"
+10:58:52.569 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:52.569 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
+10:58:53.631 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:53.631 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage
+10:58:56.283 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:56.283 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user is on the trello login page
+10:58:56.393 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:56.393 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user enters username "myser@gmail.com" and password "meuser@23*&"
+10:58:56.443 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:56.443 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user click on the login button
+10:58:57.506 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user cannot login with invalid credentials
+10:58:57.506 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user does not successfully login into the application homepage

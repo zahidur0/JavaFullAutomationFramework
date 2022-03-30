@@ -27,7 +27,6 @@ public class QtContactUsStep extends BaseClass {
     String helpTextboxId = configReader.getHelpTextboxId();
     String locationId = configReader.getLocationId();
 
-
     // This constructor is required to pass the driver from
     // the cucumber hooks to this test class (see cucumber picocontainer)
     public QtContactUsStep(BaseClass base) {
@@ -39,6 +38,8 @@ public class QtContactUsStep extends BaseClass {
         base.driver.get(qualitestMainUrl);
         // maximise the window
         base.driver.manage().window().maximize();
+        base.logger.info("hello");
+
     }
 
     @And("the page url is {string}")

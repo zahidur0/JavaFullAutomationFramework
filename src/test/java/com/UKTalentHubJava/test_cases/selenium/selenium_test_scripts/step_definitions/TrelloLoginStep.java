@@ -38,7 +38,7 @@ public class TrelloLoginStep extends BaseClass {
     }
 
     @When("the user enters username {string} and password {string}")
-    public void theUserEnterUsernameAndPassword(String login, String password) throws InterruptedException {
+    public void theUserEnterUsernameAndPassword(String login, String password) {
         base.driver.findElement(By.id(loginId)).sendKeys(login);
         base.driver.findElement(By.id(passwordId)).sendKeys(password);
     }
@@ -54,11 +54,6 @@ public class TrelloLoginStep extends BaseClass {
         wait.until(ExpectedConditions
                 .visibilityOfElementLocated(By.xpath(loginErrorMessageXPath)));
         System.out.println("test");
-    }
-
-    @After("@trello-login")
-    public void driverQuit() {
-        base.driver.quit();
     }
 
 }

@@ -33,12 +33,14 @@ public class CucumberHooks extends BaseClass {
     }
 
     @AfterStep("@selenium")
-    public void screenShot(Scenario scenario) throws IOException {
-        if (!scenario.isFailed()) {
+    public void afterStepCheck(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
             new ScreenshotTaker(base.driver,
                     System.getProperty("user.dir") + "\\screenshots\\",
                     currentStepDescr);
         }
+        base.logger.info("STARTED -- " + scenario.getName());
+        base.logger.info("PASSED -- " + currentStepDescr);
         currentStepDefIndex += 1;
     }
 }

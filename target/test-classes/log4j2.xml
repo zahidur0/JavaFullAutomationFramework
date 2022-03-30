@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="basePath">./logs</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="cucumber_selenium" fileName="${basePath}/cucumber_selenium/cs_logs_${date:yyyy-MM-dd}.log"
+                     filePattern="${basePath}/cucumber_selenium/prints-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{3} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="cucumber_rest_assured"
+                     fileName="${basePath}/cucumber_rest_assured/cr_logs_${date:yyyy-MM-dd}.log"
+                     filePattern="${basePath}/cucumber_selenium/prints-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{3} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions"
+                level="debug">
+            <AppenderRef ref="cucumber_selenium"/>
+            <AppenderRef ref="cucumber_selenium_html"/>
+        </Logger>
+
+        <Logger name="com.UKTalentHubJava.test_cases.rest_assured.step_definitions"
+                level="debug">
+            <AppenderRef ref="cucumber_rest_assured"/>
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

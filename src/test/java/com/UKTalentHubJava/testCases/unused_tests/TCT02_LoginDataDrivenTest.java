@@ -1,15 +1,9 @@
 package com.UKTalentHubJava.testCases.unused_tests;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Arrays;
 
-import com.UKTalentHubJava.testCases.BaseClass;
 import com.UKTalentHubJava.utilities.XLUtils;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -60,7 +54,7 @@ public class TCT02_LoginDataDrivenTest extends BaseClass {
     @DataProvider(name = "LoginData")
     public Object[][] getData() throws IOException {
 //        String path = System.getProperty("user.dir") + "src/test/java/com/UKTalentHubJava/testData/LoginData.xlsx";
-        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\testData\\LoginData.xlsx";
+        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\testData\\AutomationPracticeLoginDetails.xlsx";
         int rowNum = XLUtils.getRowCount(path, "Sheet1");
         int colCount = XLUtils.getCellCount(path, "Sheet1", 1);
 

@@ -24,7 +24,7 @@ public class GoRestUserConfig {
         }
     }
 
-    public static String existentId = "3625";
+    public static String existentId = "3969";
     public static RequestSpecification goRestRequestSpec;
 
     @Before("@req-spec")

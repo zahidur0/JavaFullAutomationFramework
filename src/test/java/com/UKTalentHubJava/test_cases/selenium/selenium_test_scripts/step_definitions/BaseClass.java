@@ -1,15 +1,23 @@
 package com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions;
 
 import com.UKTalentHubJava.utilities.ReadConfig;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.LoggerContext;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.io.File;
+
 public class BaseClass {
 
     public WebDriver driver;
+    public Logger logger;
+
     public WebDriver setup(String br) {
+        logger = LogManager.getLogger(BaseClass.class);
         ReadConfig readConfig = new ReadConfig();
         switch (br) {
             case "chrome":
