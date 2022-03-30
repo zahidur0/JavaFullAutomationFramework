@@ -7,12 +7,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.sql.*;
 import java.util.Arrays;
 
 public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
 
-    @Test(dataProvider = "IncorrectSqlLoginData")
+    @Test(dataProvider = "SqlLoginData")
     public void IncorrectLoginDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
         ap.setUsername(uname);
@@ -30,7 +31,7 @@ public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
         }
     }
 
-    @Test(dataProvider = "CorrectSqlLoginData")
+    @Test(dataProvider = "SqlLoginData")
     public void CorrectLoginDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
         ap.setUsername(uname);
@@ -47,6 +48,40 @@ public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
             Assert.fail("Login failed");
         }
 
+    }
+
+    @DataProvider(name = "SqlLoginData")
+    public Object[][] selectAllCorrect(Method testMethod) throws SQLException {
+        String methodName = testMethod.getName();
+        int rowNum = 0;
+        String sql = "";
+        if (methodName.equals("CorrectLoginDDT")) {
+            sql = "SELECT username, password FROM correct_login_details";
+            rowNum = countRows("correct_login_details");
+        } else if (methodName.equals("IncorrectLoginDDT")) {
+            sql = "SELECT username, password FROM incorrect_login_details";
+            rowNum = countRows("incorrect_login_details");
+        }
+
+        Connection conn = this.connect();
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery(sql);
+        int colNum = rs.getMetaData().getColumnCount();
+        // data provider must return an Object[][] or Iterable<Object[]>
+        Object[][] loginDetails = new Object[rowNum][colNum];
+        System.out.println(rowNum);
+
+        for (int i = 0; i < rowNum; i++) {
+            rs.next();
+            for (int j = 0; j <= (colNum - 1); j++) {
+                System.out.println(i + " " + j);
+                System.out.println(rs.getString(j + 1));
+                loginDetails[i][j] = rs.getString(j + 1);
+            }
+        }
+        conn.close();
+        System.out.println(Arrays.deepToString(loginDetails));
+        return loginDetails;
     }
 
     private Connection connect() {
@@ -70,56 +105,5 @@ public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
         int rowNum = rs.getInt(1);
         conn.close();
         return rowNum;
-    }
-
-    @DataProvider(name = "IncorrectSqlLoginData")
-    public Object[][] selectAllIncorrect() throws SQLException {
-        String sql = "SELECT username, password FROM incorrect_login_details";
-        Connection conn = this.connect();
-        Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(sql);
-        int colNum = rs.getMetaData().getColumnCount();
-        int rowNum = countRows("incorrect_login_details");
-        System.out.println("incorrect row num: " + rowNum);
-        // data provider must return an Object[][] or Iterable<Object[]>
-        Object[][] loginDetails = new Object[rowNum][colNum];
-        System.out.println(rowNum);
-
-        for (int i = 0; i < rowNum; i++) {
-            rs.next();
-            for (int j = 0; j <= (colNum - 1); j++) {
-                System.out.println(i + " " + j);
-                System.out.println(rs.getString(j + 1));
-                loginDetails[i][j] = rs.getString(j + 1);
-            }
-        }
-        conn.close();
-        System.out.println(Arrays.deepToString(loginDetails));
-        return loginDetails;
-    }
-
-    @DataProvider(name = "CorrectSqlLoginData")
-    public Object[][] selectAllCorrect() throws SQLException {
-        String sql = "SELECT username, password FROM correct_login_details";
-        Connection conn = this.connect();
-        Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(sql);
-        int colNum = rs.getMetaData().getColumnCount();
-        int rowNum = countRows("correct_login_details");
-        // data provider must return an Object[][] or Iterable<Object[]>
-        Object[][] loginDetails = new Object[rowNum][colNum];
-        System.out.println(rowNum);
-
-        for (int i = 0; i < rowNum; i++) {
-            rs.next();
-            for (int j = 0; j <= (colNum - 1); j++) {
-                System.out.println(i + " " + j);
-                System.out.println(rs.getString(j + 1));
-                loginDetails[i][j] = rs.getString(j + 1);
-            }
-        }
-        conn.close();
-        System.out.println(Arrays.deepToString(loginDetails));
-        return loginDetails;
     }
 }
