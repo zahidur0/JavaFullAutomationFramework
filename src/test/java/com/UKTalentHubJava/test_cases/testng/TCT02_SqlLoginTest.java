@@ -74,8 +74,6 @@ public class TCT02_SqlLoginTest extends BaseClassAutomationPractice {
         for (int i = 0; i < rowNum; i++) {
             rs.next();
             for (int j = 0; j <= (colNum - 1); j++) {
-                System.out.println(i + " " + j);
-                System.out.println(rs.getString(j + 1));
                 loginDetails[i][j] = rs.getString(j + 1);
             }
         }

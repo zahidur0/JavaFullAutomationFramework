@@ -38,8 +38,6 @@ public class QtContactUsStep extends BaseClass {
         base.driver.get(qualitestMainUrl);
         // maximise the window
         base.driver.manage().window().maximize();
-        base.logger.info("hello");
-
     }
 
     @And("the page url is {string}")
@@ -50,8 +48,6 @@ public class QtContactUsStep extends BaseClass {
     @Then("the page states {string}")
     public void thePageStatesTheWorldSLeadingAILedQualityEngineeringCompanyQualitest(String mainPageTitle) {
         // check if the tab title matches the expected tab title
-        System.out.println(base.driver.getTitle());
-        System.out.println(mainPageTitle);
         Assert.assertEquals(mainPageTitle, base.driver.getTitle());
     }
 
