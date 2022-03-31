@@ -40,8 +40,9 @@ public class CucumberHooks extends BaseClass {
             new ScreenshotTaker(base.driver,
                     System.getProperty("user.dir") + "\\screenshots\\",
                     currentStepDescr);
+        } else {
+            base.logger.info("PASSED -- " + currentStepDescr);
         }
-        base.logger.info("PASSED -- " + currentStepDescr);
         currentStepDefIndex += 1;
     }
 }

@@ -28,8 +28,9 @@ public class CucumberHooks {
     public void afterStepCheck(Scenario scenario) {
         if (scenario.isFailed()) {
             base.logger.error("FAILED -- " + currentStepDescr);
+        } else {
+            base.logger.info("PASSED -- " + currentStepDescr);
         }
-        base.logger.info("PASSED -- " + currentStepDescr);
         currentStepDefIndex += 1;
     }
 }
