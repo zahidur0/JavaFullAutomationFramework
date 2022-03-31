@@ -18,8 +18,9 @@ public class CucumberHooks extends BaseClass {
     }
 
     @Before("@selenium")
-    public void iInitialiseTheChromeBrowser() {
+    public void iInitialiseTheChromeBrowser(Scenario scenario) {
         base.driver = base.setup("chrome");
+        base.logger.info("STARTED -- " + scenario.getName());
     }
 
     @After("@selenium")
@@ -39,7 +40,6 @@ public class CucumberHooks extends BaseClass {
                     System.getProperty("user.dir") + "\\screenshots\\",
                     currentStepDescr);
         }
-        base.logger.info("STARTED -- " + scenario.getName());
         base.logger.info("PASSED -- " + currentStepDescr);
         currentStepDefIndex += 1;
     }

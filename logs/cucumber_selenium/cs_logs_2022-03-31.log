@@ -10,3 +10,7 @@
 10:35:16.695 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
 10:35:16.705 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
 10:35:16.705 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
+12:15:25.516 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - STARTED -- The user launches Qualitest site
+12:15:28.883 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the user loads Qualitest official site
+12:15:28.923 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
+12:15:28.929 [main] INFO  selenium_test_scripts.step_definitions.BaseClass - PASSED -- the page url is "https://qualitestgroup.com/"
