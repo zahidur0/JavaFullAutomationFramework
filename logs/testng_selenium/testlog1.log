@@ -1913,3 +1913,30 @@
 2022-03-30 18:38:59,151 [main] INFO UkTalentHub - Incorrect login test successful
 2022-03-30 18:39:05,268 [main] INFO UkTalentHub - Incorrect login test successful
 2022-03-30 18:39:11,141 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-31 09:07:42,663 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:07:42,727 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:08:01,141 [main] INFO UkTalentHub - Login successful
+2022-03-31 09:08:50,670 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:08:50,738 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:09:00,045 [main] INFO UkTalentHub - Login failed
+2022-03-31 09:09:09,621 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:09:09,683 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:09:17,928 [main] INFO UkTalentHub - Login failed
+2022-03-31 09:09:38,794 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:09:38,861 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:09:45,632 [main] INFO UkTalentHub - Login failed
+2022-03-31 09:15:43,359 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:15:43,427 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:15:44,800 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-31 09:15:48,726 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:15:48,791 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:15:49,678 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-31 09:15:53,550 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:15:53,611 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:15:55,092 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-31 09:15:59,484 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:15:59,552 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:16:00,967 [main] INFO UkTalentHub - Incorrect login test successful
+2022-03-31 09:16:05,154 [main] INFO UkTalentHub - Entered username
+2022-03-31 09:16:05,218 [main] INFO UkTalentHub - Entered password
+2022-03-31 09:16:07,523 [main] INFO UkTalentHub - Login successful

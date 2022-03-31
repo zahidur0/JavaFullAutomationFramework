@@ -8,12 +8,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
 
-    @Test(dataProvider = "ValidData")
-    public void LoginDDT(String uname, String pwd) throws IOException {
+    @Test(dataProvider = "LoginData")
+    public void ValidLoginDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
         ap.setUsername(uname);
         logger.info("Entered username");
@@ -21,21 +22,17 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
         logger.info("Entered password");
         ap.clickLogin();
 
-        if (ap.incorrectPasswordMessageExists()) {
-            logger.info("Login failed");
+        if (driver.getTitle().equals("My account - My Store")) {
+            logger.info("Login successful");
+        } else {
             new ScreenshotTaker(driver);
+            logger.error("Login failed");
             Assert.fail("Login failed");
-        } else {
-            if (driver.getTitle().equals("My account - My Store")) {
-                logger.info("Login successful");
-            } else {
-                Assert.fail("Account page not reached");
-            }
         }
     }
 
-    @Test(dataProvider = "InvalidData")
-    public void LoginFailDDT(String uname, String pwd) throws IOException {
+    @Test(dataProvider = "LoginData")
+    public void InvalidLoginDDT(String uname, String pwd) throws IOException {
         AutomationPractice ap = new AutomationPractice(driver);
         ap.setUsername(uname);
         logger.info("Entered username");
@@ -44,38 +41,24 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
         ap.clickLogin();
 
         if (ap.incorrectPasswordMessageExists()) {
-            logger.info("Login failed");
+            logger.info("Incorrect login test successful");
         } else {
-            if (driver.getTitle().equals("My account - My Store")) {
-                logger.info("Login successful");
-                new ScreenshotTaker(driver);
-                Assert.fail("Login successful");
-            } else {
-                Assert.fail("Account page not reached");
-            }
+            new ScreenshotTaker(driver);
+            logger.error("Incorrect login test failed");
+            Assert.fail("Incorrect login test failed");
         }
     }
 
-    @DataProvider(name = "ValidData")
-    public Object[][] getValidData() throws IOException {
-        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\ValidLoginDetails.xlsx";
-        int rowNum = XLUtils.getRowCount(path, "Account Details");
-        int colCount = XLUtils.getCellCount(path, "Account Details", 1);
-
-        Object[][] loginData = new String[rowNum][colCount];
-
-        for (int i = 1; i <= rowNum; i++) {
-            for (int j = 0; j < colCount; j++) {
-                loginData[i - 1][j] = XLUtils.getCellData(path, "Account Details", i, j);//1 0
-            }
+    @DataProvider(name = "LoginData")
+    public Object[][] getValidData(Method testMethod) throws IOException {
+        String methodName = testMethod.getName();
+        String path = "";
+        if (methodName.equals("ValidLoginDDT")) {
+            path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\ValidLoginDetails.xlsx";
+        } else if (methodName.equals("InvalidLoginDDT")) {
+            path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\InvalidLoginDetails.xlsx";
         }
-        System.out.println(Arrays.deepToString(loginData));
-        return loginData;
-    }
 
-    @DataProvider(name = "InvalidData")
-    public Object[][] getInvalidData() throws IOException {
-        String path = System.getProperty("user.dir") + "\\src\\test\\java\\com\\UKTalentHubJava\\test_data\\InvalidLoginDetails.xlsx";
         int rowNum = XLUtils.getRowCount(path, "Account Details");
         int colCount = XLUtils.getCellCount(path, "Account Details", 1);
 
