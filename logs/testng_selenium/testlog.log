@@ -1940,3 +1940,9 @@
 2022-03-31 09:16:05,154 - UkTalentHub -INFO - Entered username
 2022-03-31 09:16:05,218 - UkTalentHub -INFO - Entered password
 2022-03-31 09:16:07,523 - UkTalentHub -INFO - Login successful
+2022-04-04 09:20:50,600 - UkTalentHub -INFO - Login successful
+2022-04-04 09:20:56,022 - UkTalentHub -INFO - Incorrect login test successful
+2022-04-04 09:21:00,048 - UkTalentHub -INFO - Incorrect login test successful
+2022-04-04 09:21:05,249 - UkTalentHub -INFO - Incorrect login test successful
+2022-04-04 09:21:10,630 - UkTalentHub -INFO - Incorrect login test successful
+2022-04-04 09:21:15,467 - UkTalentHub -INFO - Incorrect login test successful

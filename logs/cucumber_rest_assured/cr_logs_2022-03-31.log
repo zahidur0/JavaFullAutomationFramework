@@ -64,3 +64,81 @@
 12:40:13.402 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I setup a RequestSpecification object
 12:40:14.547 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a GET request with no explicit authorisation specified
 12:40:14.550 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- the submit request is successful
+14:10:20.670 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user gets a single object back from a response
+14:10:22.736 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I send a request for a single object
+14:10:22.740 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The request is successful
+14:10:23.257 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate the returned object
+15:52:44.069 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user gets a single object back from a response
+15:52:45.754 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I send a request for a single object
+15:52:45.758 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The request is successful
+15:52:46.292 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate the returned object
+17:31:41.107 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user gets a single object back from a response
+17:31:42.800 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I send a request for a single object
+17:31:42.804 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The request is successful
+17:31:43.420 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate the returned object
+17:32:26.660 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user gets a single object back from a response
+17:32:28.457 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I send a request for a single object
+17:32:28.461 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The request is successful
+17:32:29.105 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate the returned object
+17:32:29.164 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user gets multiple objects from the request
+17:32:29.392 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I send a request for multiple objects
+17:32:29.394 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The request is successful
+17:32:29.473 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate specific objects are present
+17:32:29.492 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user successfully posts an entry
+17:32:30.719 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a post request
+17:32:30.721 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- The post request was successful
+17:32:30.738 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I validate the entry has been added
+17:32:30.754 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user successfully updates an entry
+17:32:31.855 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a put request
+17:32:31.858 [main] ERROR rest_assured.step_definitions.BaseClass - FAILED -- The put request was successful
+17:32:31.880 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- A user successfully deletes an entry
+17:32:32.932 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a delete request
+17:32:32.935 [main] ERROR rest_assured.step_definitions.BaseClass - FAILED -- The delete request was successful
+17:32:32.952 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- I compare the time taken for a GET and POST request response
+17:32:34.039 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a timed post request
+17:32:35.076 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a timed get request
+17:32:35.078 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I return the time taken for both requests
+17:32:35.079 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I compare the get api response time to the post api response time
+17:32:35.091 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully serialise JSON as a POJO
+17:32:36.144 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I receive a JSON response
+17:32:36.444 [main] ERROR rest_assured.step_definitions.BaseClass - FAILED -- I serialise an object using the JSON response
+17:32:36.461 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully serialise nested JSON as a POJO
+17:32:36.668 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I receive a nested JSON response
+17:32:36.673 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I serialise a nested object using the JSON response
+17:32:36.674 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I can access nested data using pojos
+17:32:36.683 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully serialise XML as a POJO
+17:32:37.797 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I receive a XML response
+17:32:38.029 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I serialise an object using the XML response
+17:32:38.032 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I am able to validate the XML has successfully been serialised as a POJO
+17:32:38.047 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully create JSON from a POJO
+17:32:38.050 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I create a pojo for json creation
+17:32:38.051 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I set the pojo fields for json creation
+17:32:38.102 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I create an json entry
+17:32:38.116 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully create XML from a POJO
+17:32:38.168 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I create a pojo
+17:32:38.169 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I set the pojo fields
+17:32:38.202 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I create an XML entry
+17:32:38.212 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully verify response against JSON schema
+17:32:39.335 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I have a JSON response
+17:32:39.337 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I have a JSON schema
+17:32:39.562 [main] ERROR rest_assured.step_definitions.BaseClass - FAILED -- I find the JSON response agrees with the schema
+17:32:39.580 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully verify response against XML schema
+17:32:40.647 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I have a XML response
+17:32:40.649 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I have a XML schema
+17:32:40.720 [main] ERROR rest_assured.step_definitions.BaseClass - FAILED -- I find the XML response agrees with the schema
+17:32:40.731 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully get all headers from a response
+17:32:41.775 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a GET request
+17:32:41.776 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- GET request is successful
+17:32:41.778 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I can extract all headers
+17:32:41.787 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully get one header from a response
+17:32:42.821 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a GET request
+17:32:42.822 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- GET request is successful
+17:32:42.824 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I can extract one header
+17:32:42.836 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully return a List from a GET response
+17:32:43.896 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a GET request for users information
+17:32:43.898 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- GET request for user information is successful
+17:32:43.927 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I can retrieve a list of user names
+17:32:43.944 [main] INFO  rest_assured.step_definitions.BaseClass - STARTED -- Successfully use a RequestSpecification object to pass authorisation check
+17:32:43.949 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I setup a RequestSpecification object
+17:32:45.127 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- I submit a GET request with no explicit authorisation specified
+17:32:45.130 [main] INFO  rest_assured.step_definitions.BaseClass - PASSED -- the submit request is successful

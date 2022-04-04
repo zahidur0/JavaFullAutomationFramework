@@ -1,7 +1,6 @@
 package com.UKTalentHubJava.test_cases.selenium.selenium_test_scripts.step_definitions;
 
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

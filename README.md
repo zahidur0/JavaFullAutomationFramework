@@ -1,3 +1,38 @@
+<h1> <u>Java Automation Framework </u> </h1>
+
+This project uses the following tools:
+
+<ul>
+    <li>Cucumber</li>
+    <li>TestNG</li>
+    <li>Junit</li>
+    <li>REST Assured</li>
+    <li>Selenium</li>
+    <li>Log4j</li>
+    <li>Allure Reports</li>
+    <li>Extent Reports</li>
+    <li>Maven</li>
+</ul>
+
+Cucumber tests
+that use REST Assured and Selenium can be found in `../test_cases/rest_assured` and `../test_cases/selenium` respectively. TestNG tests that can be found in `../test_cases/testng`.
+
+`src/test/java/com/UKTalentHubJava/test_data` contains Excel spreadsheets and SQL databases used by test classes found in `../test_cases/testng`. `src/test/java/com/UKTalentHubJava/utilities` contains classes that are used in configuration of variables and provide methods that are used by test classes. In `resources` we have XML and JSON schema used in REST Assured schema validation and the Log4j XML file used for logging configuration.
+
+<h3><u>How to run tests</u></h3>
+
+There are multiple methods that can be used to run tests. Tests can be run:
+
+- Directly from the feature file
+- Using the Cucumber test runner (only for Cucumber tests)
+- Using Maven (i.e. `mvn clean test`)
+
+<h3><u>How to view reports</u></h3>
+
+To view the Allure report you will need to first install Allure (https://docs.qameta.io/allure/). Then navigate to the project directory where the `allure-results` folder exists and enter `allure serve allure-reports`.
+
+Extent reports are automatically generated after Testng tests are ran. They can be found in the `test-output` 
+
 <h3><u>REST Assured Codebase</u></h3>
 
 Official REST Assured documentation can be found at: https://github.com/rest-assured/rest-assured/wiki/Usage.
