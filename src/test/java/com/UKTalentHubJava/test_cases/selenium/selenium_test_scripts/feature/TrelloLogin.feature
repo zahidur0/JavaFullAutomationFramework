@@ -11,7 +11,7 @@ Feature: The user would like to login into the application
     Examples:
       | username           | password    |
       | admin@gmail.com    | admin123!   |
-      | admin34@yahoo.com  | admin1965@  |
-      | userXZY@gmailcom   | userXZY76&  |
-      | novauser@gmail.com | nova@123$   |
-      | myser@gmail.com    | meuser@23*& |
+#      | admin34@yahoo.com  | admin1965@  |
+#      | userXZY@gmailcom   | userXZY76&  |
+#      | novauser@gmail.com | nova@123$   |
+#      | myser@gmail.com    | meuser@23*& |

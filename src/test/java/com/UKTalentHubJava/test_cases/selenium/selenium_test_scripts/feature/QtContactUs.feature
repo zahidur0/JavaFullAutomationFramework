@@ -4,8 +4,8 @@ Feature: User launches Qualitest site and explores
 
   Scenario: The user launches Qualitest site
     Given the user loads Qualitest official site
-    Then the page states "The World’s Leading AI-Led Quality Engineering Company | Qualitest"
-    And the page url is "https://qualitestgroup.com/"
+    Then the page states "The World’s Leading AI-Led Quality Engineering Company - Qualitest"
+    And the page url is "https://www.qualitestgroup.com/"
 
   Scenario: The user opens contact us page
     Given the user is on Qualitest site

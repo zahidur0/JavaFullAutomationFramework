@@ -23,11 +23,12 @@ public class TrelloLoginStep extends BaseClass {
     String passwordId = configReader.getPasswordId();
     String loginButtonId = configReader.getLoginButtonId();
     String loginErrorMessageXPath = configReader.getLoginErrorMessageXPath();
-
+    WebDriverWait wait;
     // This constructor is required to pass the driver from
     // the cucumber hooks to this test class (see cucumber picocontainer)
     public TrelloLoginStep(BaseClass base) {
         this.base = base;
+        wait = new WebDriverWait(base.driver, Duration.ofSeconds(5));
     }
 
     @Given("the user is on the trello login page")
@@ -39,7 +40,8 @@ public class TrelloLoginStep extends BaseClass {
     @When("the user enters username {string} and password {string}")
     public void theUserEnterUsernameAndPassword(String login, String password) {
         base.driver.findElement(By.id(loginId)).sendKeys(login);
-        base.driver.findElement(By.id(passwordId)).sendKeys(password);
+        base.driver.findElement(By.id(loginButtonId)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(passwordId))).sendKeys(password);
     }
 
     @And("the user click on the login button")
@@ -49,7 +51,6 @@ public class TrelloLoginStep extends BaseClass {
 
     @Then("the user does not successfully login into the application homepage")
     public void theUserDoNotSuccessfullyLoginIntoTheApplicationHomepage() {
-        WebDriverWait wait = new WebDriverWait(base.driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions
                 .visibilityOfElementLocated(By.xpath(loginErrorMessageXPath)));
         System.out.println("test");
