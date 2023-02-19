@@ -24,10 +24,10 @@ public class GoRestUserConfig {
         }
     }
 
-    public static String existentId = "3969";
+    public static String existentId = "486058";
     public static RequestSpecification goRestRequestSpec;
 
-    @Before("@req-spec")
+    @Before("@rest-assured")
     public static void setup() {
         AuthenticationScheme auth2 = oauth2(token);
         goRestRequestSpec = new RequestSpecBuilder()
@@ -41,7 +41,7 @@ public class GoRestUserConfig {
     }
 
     private static String ReadToken() throws IOException {
-        String propertyFilePath = "C:\\Users\\Mohammed.Rahman\\Documents\\Authentication Key for Go REST.txt";
+        String propertyFilePath = "C:\\Users\\Zahidur\\Documents\\Coding\\Authentication Key for Go REST.txt";
         try {
             BufferedReader reader = new BufferedReader(new FileReader(propertyFilePath));
             return reader.readLine();

@@ -48,7 +48,7 @@ public class TCR04_SendingAndValidatingDELETERequestsStep {
         response.then().body("id", not(containsString(id)));
         System.out.println("Validation successful");
         // reset the existent id since the id we were dealing with is now removed
-        GoRestUserConfig.existentId = "3211";
+        GoRestUserConfig.existentId = "486057";
         LineDrawer.HorizontalLineDrawer();
     }
 }
