@@ -25,7 +25,7 @@ public class TCS17_HandlingMultipleTabsStep {
 
     @Given("I have navigated to a form")
     public void i_have_navigated_to_a_form(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url1);
     }

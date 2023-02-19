@@ -16,7 +16,7 @@ public class TCS02_ClickAndNavigateStep {
     @Given("I have navigated to the web page for TC002")
     public void i_have_navigated_to_the_web_page_for_tc002(){
         // This sets the system property so selenium knows where to look to find the appropriate driver
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 
         // This creates the driver object that will be used throughout the test
         driver = new ChromeDriver();

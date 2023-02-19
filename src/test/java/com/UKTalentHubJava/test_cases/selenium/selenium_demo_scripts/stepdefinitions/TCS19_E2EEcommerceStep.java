@@ -25,8 +25,7 @@ public class TCS19_E2EEcommerceStep {
     Object[][] productsToAdd = new Object[][]{
             {"Brocolli", 10},
             {"Cucumber", 5},
-            {"Carrot", 2},
-            {"Potato", 8},
+            {"Carrot", 2}
     };
     String productToRemove = productsToAdd[0][0].toString();
     String correctPromoCode = "rahulshettyacademy";
@@ -34,7 +33,7 @@ public class TCS19_E2EEcommerceStep {
 
     @Given("I have navigated to the web page for TC019")
     public void i_void_navigated_to_the_web_page_for_tc019(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
         driver.manage().window().maximize();

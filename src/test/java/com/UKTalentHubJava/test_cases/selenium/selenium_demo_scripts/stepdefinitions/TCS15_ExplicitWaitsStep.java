@@ -20,7 +20,7 @@ public class TCS15_ExplicitWaitsStep {
 
     @Given("I have created an explicit wait")
     public void i_have_created_an_explicit_wait(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
 
         // Here we create a WebDriverWait object, passing it the driver object and the Duration of time it should wait

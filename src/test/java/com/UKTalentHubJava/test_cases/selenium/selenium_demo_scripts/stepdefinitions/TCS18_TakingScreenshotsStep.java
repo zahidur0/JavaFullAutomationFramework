@@ -17,12 +17,12 @@ public class TCS18_TakingScreenshotsStep {
     String url = "https://savkk.github.io/selenium-practice/form/";
     File screenshot;
     boolean saveSuccessful;
-    String pathToSaveScreenshot1 = "C:/Users/charlie.gilliland/Documents/screenshot1.png";
-    String pathToSaveScreenshot2 = "C:/Users/charlie.gilliland/Documents/screenshot2.png";
+    String pathToSaveScreenshot1 = System.getProperty("user.dir") + "\\screenshots\\screenshot1.png";
+    String pathToSaveScreenshot2 = System.getProperty("user.dir") + "\\screenshots\\screenshot2.png";
 
     @Given("I have navigated to the web page for TC018")
     public void i_have_navigated_to_the_web_page_for_tc018(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
     }

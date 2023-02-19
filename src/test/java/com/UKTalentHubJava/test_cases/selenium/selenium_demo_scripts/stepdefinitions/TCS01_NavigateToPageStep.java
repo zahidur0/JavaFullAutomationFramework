@@ -14,7 +14,7 @@ public class TCS01_NavigateToPageStep {
     @Given("I have set up the web driver")
     public void i_have_set_up_a_web_driver(){
         // This sets the system property so selenium knows where to look to find the appropriate driver
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 
         // This creates the driver object that will be used throughout the test
         driver = new ChromeDriver();

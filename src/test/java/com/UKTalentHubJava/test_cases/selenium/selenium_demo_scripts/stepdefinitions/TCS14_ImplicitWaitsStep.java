@@ -17,7 +17,7 @@ public class TCS14_ImplicitWaitsStep {
 
     @Given("I have supplied the correct setup to add an implicit wait")
     public void i_have_supplied_the_correct_setup_to_add_an_implicit_wait(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
 
         // Implicit waits can be set with the following syntax
