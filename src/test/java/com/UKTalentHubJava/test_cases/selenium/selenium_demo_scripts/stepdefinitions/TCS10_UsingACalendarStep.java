@@ -21,7 +21,7 @@ public class TCS10_UsingACalendarStep {
 
     @Given("I have navigated to the web page for TC010")
     public void i_have_navigated_to_the_web_page_for_tc010() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/charlie.gilliland/Documents/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
