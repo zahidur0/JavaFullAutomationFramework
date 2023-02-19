@@ -19,10 +19,10 @@ import java.time.Duration;
 public class BaseClassAutomationPractice {
 
     ReadConfig readconfig = new ReadConfig();
-    public String baseURL = "http://automationpractice.com/index.php?controller=authentication";
+    public String baseURL = "https://practice.automationtesting.in/my-account/";
 
     public String username = "123123@email.com";
-    public String password = "123123";
+    public String password = "PasswordPassword!Password!123";
     public String testName;
 
     public WebDriver driver;
@@ -58,7 +58,6 @@ public class BaseClassAutomationPractice {
             driver = new InternetExplorerDriver();
             driver.manage().window().maximize();
         }
-
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(baseURL);

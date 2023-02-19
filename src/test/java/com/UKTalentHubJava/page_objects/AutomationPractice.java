@@ -16,15 +16,15 @@ public class AutomationPractice {
         PageFactory.initElements(rdriver, this);
     }
 
-    @FindBy(id = "email")
+    @FindBy(id = "username")
     @CacheLookup
     WebElement email;
 
-    @FindBy(id = "passwd")
+    @FindBy(id = "password")
     @CacheLookup
     WebElement password;
 
-    @FindBy(id = "SubmitLogin")
+    @FindBy(name = "login")
     @CacheLookup
     WebElement loginButton;
 
@@ -45,7 +45,7 @@ public class AutomationPractice {
     }
 
     public boolean incorrectPasswordMessageExists() {
-        return !ldriver.findElements(By.xpath("//div[@class='alert alert-danger']/p")).isEmpty();
+        return !ldriver.findElements(By.xpath("//ul[@class='woocommerce-error']")).isEmpty();
     }
 
 }

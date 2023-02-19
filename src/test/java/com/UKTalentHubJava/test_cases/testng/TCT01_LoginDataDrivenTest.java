@@ -4,6 +4,7 @@ import com.UKTalentHubJava.page_objects.AutomationPractice;
 import com.UKTalentHubJava.screenshot_taker.ScreenshotTaker;
 import com.UKTalentHubJava.utilities.XLUtils;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,7 @@ public class TCT01_LoginDataDrivenTest extends BaseClassAutomationPractice {
         logger.info("Entered password");
         ap.clickLogin();
 
-        if (driver.getTitle().equals("My account - My Store")) {
+        if (driver.findElement(By.xpath("//a[text()='Sign out']")).isDisplayed()) {
             logger.info("Login successful");
         } else {
             new ScreenshotTaker(driver);
